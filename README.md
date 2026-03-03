@@ -2,7 +2,7 @@
 
 > a website that shows weather, time and photos from Mars (from Curiosity's REMS). designed and developed by me as a personal portfolio project and an opportunity to learn TypeScript
 
-[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://example.com)
+[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://martian-weather-769hslshv-toshas-projects.vercel.app/)
 [![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)](https://nextjs.org)
 [![TypeScript](https://img.shields.io/badge/TypeScript-grey?logo=typescript)](https://typescriptlang.org)
 [![TailwindCSS](https://img.shields.io/badge/Tailwind-CSS-blue?logo=tailwindcss)](https://tailwindcss.com)
