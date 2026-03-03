@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# martian_weather
 
-## Getting Started
+> a website that shows weather, time and photos from Mars (from Curiosity's REMS). designed and developed by me as a personal portfolio project and an opportunity to learn TypeScript
 
-First, run the development server:
+[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://example.com)
+[![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)](https://nextjs.org)
+[![TypeScript](https://img.shields.io/badge/TypeScript-grey?logo=typescript)](https://typescriptlang.org)
+[![TailwindCSS](https://img.shields.io/badge/Tailwind-CSS-blue?logo=tailwindcss)](https://tailwindcss.com)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## goals
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- i wanted to create an easy & fast website for portfolio which would also be connected to my hobbies. i am passionate about astrophysics so i decided that **martian_weather** would be perfect, and perfect it was - i got a lot of satisfaction from this project!
+- i've been testing my design skills in figma. the purpose of this design was to give off "old" style UI + something game-y. i know it's not perfect, but at some point you gotta stop yourself and **let. it. be.** otherwise there will always be something that you must change, *am i right?*
+- this is my first time using typescript and i am one of those who learns by doing, so this was very helpful for me
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## challenges
+- nasa provides a lot of APIs available for developers, but i met some challenges while trying to acquire what i need. at first, i wanted the website to show current weather right now, like [Mars Explorer](https://psg.gsfc.nasa.gov/apps/mars/), but this website seems to use the **mars climate database (MCD)**, which is a huge scientific database of atmospheric statistics and when i tried to reach it it got kinda messy - the idea was that i would have to build the MCD using Fortran and Python, but for a light project like this it would be too heavy. then i tried to use mcd-helper, but it was not supported on the newest python version and will meet the end of life by the end of 2027. then i went on to see where other people get their mars weather information and only through that (and for some reason not NASA websites!) found this nice api [https://mars.nasa.gov/rss/api/?feed=weather&category=msl&feedtype=json](https://mars.nasa.gov/rss/api/?feed=weather&category=msl&feedtype=json) (not really that nice since it gives you tons of info and you cannot really send any params...) but it is what it is and you gotta work with that!
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## features
 
-## Learn More
+### current features
+- latest recieved weather information from Mars REMS station 
+- live clock at Curiosity's location and Coordinated Mars Time
+- weather charts (temperature, sunrise/sunset, pressure) from different timespans
+- latest image from Curiosity and its info
 
-To learn more about Next.js, take a look at the following resources:
+### future features
+- map of the rover's location
+- more information about Mars for people who don't know much about it
+- hover infos over objects to explain, for example, why the weather info is from couple of days before etc.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**i am always learning new stuff so if i did something wrong i would like to know about that and learn from that so i am always open for comments! thanks for checking out my project :)**
