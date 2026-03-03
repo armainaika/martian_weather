@@ -79,7 +79,7 @@ export function LatestPhoto(): React.ReactElement {
       <div
         className={`flex flex-col lg:flex-row w-full justify-center ${imageData?.title ? "text-red-600" : "text-red-900"}`}
       >
-        <div className="flex flex-row w-full lg:w-1/2 justify-between lg:justify-center border-b-2 lg:border-r-2 lg:border-b-0 border-red-600 ">
+        <div className="flex flex-row w-full lg:w-1/2 justify-center lg:justify-center border-b-2 lg:border-r-2 lg:border-b-0 border-red-600 ">
           {loading ? (
             <span className="w-full flex items-center justify-center text-red-900">
               <Typewriter

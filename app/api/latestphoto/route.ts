@@ -11,12 +11,14 @@ interface MarsPhoto {
 }
 
 export async function GET(req: Request) {
+  const apiKey = process.env.MARS_VISTA_API_KEY;
+
   const res = await fetch(
     "https://api.marsvista.dev/api/v2/photos?rovers=curiosity&include=rover%2Ccamera&field_set=extended&sort=-sol&page=1&per_page=1",
     {
       next: { revalidate: 3600 },
       headers: {
-        "X-API-Key": process.env.MARS_VISTA_API_KEY!,
+        "X-API-Key": apiKey!,
       },
     },
   );
