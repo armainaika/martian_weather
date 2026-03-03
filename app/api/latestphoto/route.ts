@@ -16,7 +16,7 @@ export async function GET(req: Request) {
     {
       next: { revalidate: 3600 },
       headers: {
-        "X-API-Key": "mv_live_002efbe099911aa5233452224af4e91760c14bed",
+        "X-API-Key": process.env.MARS_VISTA_API_KEY!,
       },
     },
   );
